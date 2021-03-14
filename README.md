@@ -10,7 +10,7 @@
     <a href='https://github.com/kyoz/vim-galore-vi'>Vietnamese</a>
     <div>
       <br />
-      <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
+      <sub>Licensiado bajo <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
     </div>
   </div>
   <br /><br />
