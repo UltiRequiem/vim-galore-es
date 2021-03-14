@@ -6,7 +6,7 @@
 
 - [Alignment](#alignment)
 - [Building and linting](#building-and-linting)
-- [Code completion](#code-completion)
+- [Autocompletado](#autocompletado)
 - [Commenters](#commenters)
 - [Cycle](#cycle)
 - [Databases](#databases)
@@ -85,7 +85,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [neomake](https://github.com/neomake/neomake)
 - [syntastic](https://github.com/vim-syntastic/syntastic)
 
-#### Code completion
+#### Autocompletado
 
 - [asyncomplete.vim](https://github.com/prabirshrestha/asyncomplete.vim)
 - [completor.vim](https://github.com/maralla/completor.vim)
