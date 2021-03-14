@@ -18,14 +18,14 @@
 
 ### [Intro](#intro-1)
 
-- [What is Vim?](#what-is-vim)
-- [The Vim Philosophy](#the-vim-philosophy)
-- [First steps](#first-steps)
-- [Minimal vimrc](#minimal-vimrc)
+- [¿Qué es Vim?](#what-is-vim)
+- [La filosofia de Vim](#the-vim-philosophy)
+- [Primeros Pasos](#first-steps)
+- [Basico vimrc](#minimal-vimrc)
 - [What kind of Vim am I running?](#what-kind-of-vim-am-i-running)
 - [Cheatsheets](#cheatsheets)
 
-### [Basics](#basics-1)
+### [Basicos](#basics-1)
 
 - [Buffers, windows, tabs](#buffers-windows-tabs)
 - [Active, loaded, listed, named buffers](#active-loaded-listed-named-buffers)
@@ -107,7 +107,7 @@
 - [Debugging Vim scripts](#debugging-vim-scripts)
 - [Debugging syntax files](#debugging-syntax-files)
 
-### [Miscellaneous](#miscellaneous-1)
+### [Utilidades](#miscellaneous-1)
 
 - [Additional resources](#additional-resources)
 - [Vim distributions](#vim-distributions)
@@ -117,7 +117,7 @@
 - [Easter eggs](#easter-eggs)
 - [Why hjkl for navigation?](#why-hjkl-for-navigation)
 
-### [Common problems](#common-problems-1)
+### [Problemas Comunes](#common-problems-1)
 
 - [Editing small files is slow](#editing-small-files-is-slow)
 - [Editing huge files is slow](#editing-huge-files-is-slow)
@@ -141,7 +141,7 @@
 
 # Intro
 
-## What is Vim?
+## ¿Qué es Vim?
 
 [Vim](http://www.vim.org) is a text editor with a long line of ancestors that
 goes back to [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
@@ -163,7 +163,7 @@ Read [Why, oh WHY, do those #?@! nutheads use
 vi?](http://www.viemu.com/a-why-vi-vim.html) to see common misconceptions about
 Vim explained.
 
-## The Vim Philosophy
+## La filosofia de Vim
 
 Vim adheres to the modal editing philosophy. This means that it provides
 multiple modes and the meaning of keys changes according to the mode. You
@@ -189,7 +189,7 @@ over already. This reduces [cognitive
 load](https://en.wikipedia.org/wiki/Cognitive_load) and helps to focus on the
 actual task.
 
-## First steps
+## Primeros pasos
 
 Vim comes bundled with an interactive tutorial that teaches the most basic
 things you need to know about. You can start it from the shell:
@@ -225,7 +225,7 @@ One last advice: Please learn how to use Vim properly before starting to add all
 kinds of hyped [plugins](#managing-plugins) that only implement features that
 Vim already supports natively.
 
-## Minimal vimrc
+## Basico vimrc
 
 The user vimrc can be put into `~/.vimrc` or for the sake of better separation
 into `~/.vim/vimrc`. The latter makes it easy to put the entire configuration
