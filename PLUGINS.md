@@ -1,8 +1,8 @@
 ## Lista de plugins
 
-#### [Colorschemes](#colorschemes-1)
+#### [Temas](#Temas-1)
 
-#### [By topic](#by-topic-1)
+#### [Por tema](#por-tema-1)
 
 - [Alignment](#alignment)
 - [Building and linting](#building-and-linting)
@@ -28,7 +28,7 @@
 - [Version control](#version-control)
 - [Writing](#writing)
 
-#### [By filetype](#by-filetype-1)
+#### [Por tipo de archivo](#por-tipo-de-archivo-1)
 
 - [C and C++](#c-and-c)
 - [Clojure](#clojure)
@@ -44,9 +44,9 @@
 - [TeX](#tex)
 - [VimL](#viml)
 
-## Colorschemes
+## Temas
 
-Here's a list of commonly used colorschemes:
+Here's a list of commonly used Temas:
 
 - [acme-colors](https://github.com/plan9-for-vimspace/acme-colors)
 - [apprentice](https://github.com/romainl/Apprentice)
@@ -71,7 +71,7 @@ Here's a list of commonly used colorschemes:
 Alternatively, generate your own colorscheme using [themer](https://github.com/mjswensen/themer)
 or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
-## By topic
+## Por Tema
 
 #### Alignment
 
@@ -271,7 +271,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-startify](https://github.com/mhinz/vim-startify)
 - [vim-unimpaired](https://github.com/tpope/vim-unimpaired)
 
-## By filetype
+## Por tipo de archivo
 
 #### C and C++
 
