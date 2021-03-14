@@ -1,4 +1,4 @@
-## List of plugins
+## Lista de plugins
 
 #### [Colorschemes](#colorschemes-1)
 
