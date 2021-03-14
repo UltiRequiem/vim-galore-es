@@ -18,8 +18,8 @@
 
 ### [Intro](#intro-1)
 
-- [¿Qué es Vim?](#what-is-vim)
-- [La filosofia de Vim](#the-vim-philosophy)
+- [¿Qué es Vim?](#qué-es-vim)
+- [La filosofia de Vim](##la-filosofia-de-vim)
 - [Primeros Pasos](#first-steps)
 - [Basico vimrc](#minimal-vimrc)
 - [What kind of Vim am I running?](#what-kind-of-vim-am-i-running)
