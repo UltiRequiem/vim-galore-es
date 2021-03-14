@@ -5,7 +5,7 @@
 #### [Por tema](#por-tema-1)
 
 - [Alignment](#alignment)
-- [Building and linting](#building-and-linting)
+- [Building y linting](#building-and-linting)
 - [Autocompletado](#autocompletado)
 - [Comentadores](#comentadores)
 - [Cycle](#cycle)
@@ -14,7 +14,7 @@
 - [Fuzzy finders](#fuzzy-finders)
 - [Grep tools](#grep-tools)
 - [Indent](#indent)
-- [Misc](#misc)
+- [Utilidades](#Utilidades)
 - [Navigation](#navigation)
 - [Plugin managers](#plugin-managers)
 - [Snippets](#snippets)
@@ -24,13 +24,13 @@
 - [Testing](#testing)
 - [Text objects](#text-objects)
 - [Tmux](#tmux)
-- [Undo history](#undo-history)
-- [Version control](#version-control)
-- [Writing](#writing)
+- [Deshacer](#undo-history)
+- [Version de control](#version-de-control)
+- [Escritura](#Escritura)
 
 #### [Por tipo de archivo](#por-tipo-de-archivo-1)
 
-- [C and C++](#c-and-c)
+- [C y C++](#c-and-c)
 - [Clojure](#clojure)
 - [Elixir](#elixir)
 - [Go](#go)
@@ -79,7 +79,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 - [vim-lion](https://github.com/tommcdo/vim-lion)
 
-#### Building and linting
+#### Building y linting
 
 - [ale](https://github.com/w0rp/ale)
 - [neomake](https://github.com/neomake/neomake)
@@ -124,7 +124,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [Command-T](https://github.com/wincent/Command-T) (_requires +ruby_)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
 - [denite.nvim](https://github.com/Shougo/denite.nvim) (_requires +python3_)
-- [fzf](https://github.com/junegunn/fzf) (and [fzf.vim](https://github.com/junegunn/fzf.vim))
+- [fzf](https://github.com/junegunn/fzf) (y [fzf.vim](https://github.com/junegunn/fzf.vim))
 - [LeaderF](https://github.com/Yggdroot/LeaderF) (_requires +python or +python3_)
 - [unite.vim](https://github.com/Shougo/unite.vim)
 
@@ -209,12 +209,12 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [vitality.vim](https://github.com/sjl/vitality.vim)
 
-#### Undo history
+#### Deshacer
 
 - [gundo.vim](https://github.com/sjl/gundo.vim)
 - [undotree](https://github.com/mbbill/undotree)
 
-#### Version control
+#### Version de control
 
 - [agit.vim](https://github.com/cohama/agit.vim)
 - [committia.vim](https://github.com/rhysd/committia.vim)
@@ -232,7 +232,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-twiggy](https://github.com/sodapopcan/vim-twiggy)
 - [vimagit](https://github.com/jreybert/vimagit)
 
-#### Writing
+#### Escritura
 
 - [thesaurus_query.vim](https://github.com/ron89/thesaurus_query.vim)
 - [vim-grammarous](https://github.com/rhysd/vim-grammarous)
@@ -241,7 +241,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 - [vim-textobj-quote](https://github.com/reedes/vim-textobj-quote)
 - [vim-wordy](https://github.com/reedes/vim-wordy)
 
-#### Misc
+#### Utilidades
 
 - [calendar.vim](https://github.com/itchyny/calendar.vim)
 - [CoVim](https://github.com/FredKSchott/CoVim)
@@ -273,7 +273,7 @@ Also see [fuzzy finders](#fuzzy-finders).
 
 ## Por tipo de archivo
 
-#### C and C++
+#### C y C++
 
 - [a.vim](https://github.com/vim-scripts/a.vim)
 - [clang_complete](https://github.com/Rip-Rip/clang_complete)
