@@ -7,7 +7,7 @@
 - [Alignment](#alignment)
 - [Building and linting](#building-and-linting)
 - [Autocompletado](#autocompletado)
-- [Commenters](#commenters)
+- [Comentadores](#comentadores)
 - [Cycle](#cycle)
 - [Databases](#databases)
 - [Delimiter](#delimiter)
@@ -102,7 +102,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [switch.vim](https://github.com/AndrewRadev/switch.vim)
 - [vim-speeddating](https://github.com/tpope/vim-speeddating)
 
-#### Commenters
+#### Comentadores
 
 - [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 - [tcomment_vim](https://github.com/tomtom/tcomment_vim)
