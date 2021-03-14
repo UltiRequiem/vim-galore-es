@@ -9,7 +9,7 @@
 - [Autocompletado](#autocompletado)
 - [Comentadores](#comentadores)
 - [Cycle](#cycle)
-- [Databases](#databases)
+- [Bases de datos](#bases-de-datos)
 - [Delimiter](#delimiter)
 - [Fuzzy finders](#fuzzy-finders)
 - [Grep tools](#grep-tools)
@@ -108,7 +108,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [tcomment_vim](https://github.com/tomtom/tcomment_vim)
 - [vim-commentary](https://github.com/tpope/vim-commentary)
 
-#### Databases
+#### Bases de datos
 
 - [pgsql.vim](https://github.com/lifepillar/pgsql.vim)
 - [vim-dadbod](https://github.com/tpope/vim-dadbod)
