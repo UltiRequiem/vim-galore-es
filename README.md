@@ -1,6 +1,6 @@
 <div align='center'>
   <br /><br /><br />
-  <img src='https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/logo-vim-galore.png' alt='vim-galore logo' />
+  <img src='https://user-images.githubusercontent.com/71897736/111492126-69d63200-870a-11eb-8d76-804ad43cbaba.png' alt='vim-galore logo' />
   <br /><br /><br /><br />
   <div>
     <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
@@ -1715,7 +1715,7 @@ from within Vim.
 
 This is a technique to insert the same text on multiple consecutive lines at the
 same time. See this
-[demo](https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/content-block_insert.gif).
+[demo](https://user-images.githubusercontent.com/71897736/111492134-6a6ec880-870a-11eb-85d5-a2ec95dc28a2.gif).
 
 Switch to visual block mode with `<c-v>`. Afterwards go down for a few lines.
 Hit `I` or `A` and start entering your text.
@@ -2560,7 +2560,7 @@ out. No further code (mappings, commands, logic) will be processed.
 
 CapsLock belongs to the most useless keys on your keyboard, but it's much easier
 to reach than the Control key, since it lies on your [home
-row](https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/content-homerow.png).
+row](https://user-images.githubusercontent.com/71897736/111492130-6a6ec880-870a-11eb-8607-0b6275be74d6.png).
 Mapping CapsLock to Control is a great way to prevent or at least reduce
 [RSI](https://de.wikipedia.org/wiki/Repetitive-Strain-Injury-Syndrom) if you
 program a lot.
@@ -2626,7 +2626,7 @@ When [Bill Joy](https://en.wikipedia.org/wiki/Bill_Joy) created
 [ADM-3A](https://en.wikipedia.org/wiki/ADM-3A) which had no extra cursor buttons
 but used, you might already guessed it, hjkl instead.
 
-Keyboard layout: [click](https://raw.githubusercontent.com/mhinz/vim-galore/master/static/images/content-adm-3a-layout.jpg)
+Keyboard layout: [click](https://user-images.githubusercontent.com/71897736/111492138-6a6ec880-870a-11eb-9756-40b79a77bf2b.jpg)
 
 This also shows why `~` is used to denote the home directory on Unix systems.
 
