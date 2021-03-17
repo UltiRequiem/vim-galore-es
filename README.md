@@ -238,7 +238,7 @@ to be useful for starting out.
 Eventually you have to read up on all the mentioned settings anyway and decide
 for yourself. :-)
 
-So here it is: [minimal-vimrc](static/minimal-vimrc.vim)
+So here it is: [minimal-vimrc](minimal-vimrc.vim)
 
 In case you're interested, here's
 [my vimrc](https://github.com/mhinz/dotfiles/blob/master/.vim/vimrc).
