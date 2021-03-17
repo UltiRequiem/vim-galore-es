@@ -1,56 +1,56 @@
 "
-" A (not so) minimal vimrc.
+" Un no tan minimo vimrc
 "
 
-" You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
-" We set it explicitely to make our position clear!
+" Tu quieres Vim no Vi
+" ¡Tenemos que decirselo!
 set nocompatible
 
-filetype plugin indent on  " Load plugins according to detected filetype.
-syntax on                  " Enable syntax highlighting.
+filetype plugin indent on  " Carga los plugins segun el tipo de archivo
+syntax on                  " Activa el higlight para la syntaxis
 
-set autoindent             " Indent according to previous line.
-set expandtab              " Use spaces instead of tabs.
-set softtabstop =4         " Tab key indents by 4 spaces.
-set shiftwidth  =4         " >> indents by 4 spaces.
-set shiftround             " >> indents to next multiple of 'shiftwidth'.
+set autoindent             " Identa segun la linea anterior
+set expandtab              " Usa espaceos en vez de tabs
+set softtabstop =4         " Tab key identa 4 espacios
+set shiftwidth  =4         " >> Indeta 4 espacios
+set shiftround             " >> Identa al siguiente multiple de 'shiftwidth'.
 
-set backspace   =indent,eol,start  " Make backspace work as you would expect.
-set hidden                 " Switch between buffers without having to save first.
-set laststatus  =2         " Always show statusline.
-set display     =lastline  " Show as much as possible of the last line.
+set backspace   =indent,eol,start  " Has tu backspace work como tu esperas
+set hidden                 " Cambia entre buffs sin tener que guardar
+set laststatus  =2         " Siempre muestra la statusbar
+set display     =lastline  " Muestra lo mas posible de la ultima linea
 
-set showmode               " Show current mode in command-line.
-set showcmd                " Show already typed keys when more are expected.
+set showmode               " Muestra el estado actual
+set showcmd                " Muestra los comandos anteriores cuando son mas esperados
 
-set incsearch              " Highlight while searching with / or ?.
-set hlsearch               " Keep matches highlighted.
+set incsearch              " Highlight mientra buscas con / o ?.
+set hlsearch               " Mantiene los pares highlighted.
 
-set ttyfast                " Faster redrawing.
-set lazyredraw             " Only redraw when necessary.
+set ttyfast                " Mas rapido redrawing
+set lazyredraw             " Solo recarga cuando es necesario
 
-set splitbelow             " Open new windows below the current window.
-set splitright             " Open new windows right of the current window.
+set splitbelow             " Abre las nuevas ventanas en la parte inferior de tu ventana actual
+set splitright             " Abre las nuevas ventanas a la derecha de tu ventana actual
 
-set cursorline             " Find the current line quickly.
-set wrapscan               " Searches wrap around end-of-file.
-set report      =0         " Always report changed lines.
-set synmaxcol   =200       " Only highlight the first 200 columns.
+set cursorline             " Encuentra tu linea actual rapido
+set wrapscan               " Busca wrap cerca del final del archivo.
+set report      =0         " Siempre reporta las lineas cambiadas
+set synmaxcol   =200       " Solo usa highligth para las 200 primeras columnas
 
-set list                   " Show non-printable characters.
+set list                   " Muestra no-imprimibles caracteres
+
 if has('multi_byte') && &encoding ==# 'utf-8'
   let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
 else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
-" The fish shell is not very compatible to other shells and unexpectedly
-" breaks things that use 'shell'.
+" El fish shell no es muy compatible y rompe cosas que usen 'shell'
 if &shell =~# 'fish$'
   set shell=/bin/bash
 endif
 
-" Put all temporary files under the same directory.
+" Pon todos los archivos temporales en un mismo directorio
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
 set backup
 set backupdir   =$HOME/.vim/files/backup/
