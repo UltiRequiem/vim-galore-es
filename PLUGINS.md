@@ -4,8 +4,8 @@
 
 #### [Por tema](#por-tema-1)
 
-- [Alignment](#alignment)
-- [Building y linting](#building-and-linting)
+- [Identado](#Identado)
+- [Building y linting](#building-y-linting)
 - [Autocompletado](#autocompletado)
 - [Comentadores](#comentadores)
 - [Cycle](#cycle)
@@ -13,10 +13,9 @@
 - [Delimiter](#delimiter)
 - [Fuzzy finders](#fuzzy-finders)
 - [Grep tools](#grep-tools)
-- [Indent](#indent)
 - [Utilidades](#Utilidades)
-- [Navigation](#navigation)
-- [Plugin managers](#plugin-managers)
+- [Navegacion](#Navegacion)
+- [Manejador de Plugins](#Manejador-de-Plugins)
 - [Snippets](#snippets)
 - [Statusline](#statusline)
 - [Surround](#surround)
@@ -30,7 +29,7 @@
 
 #### [Por tipo de archivo](#por-tipo-de-archivo-1)
 
-- [C y C++](#c-and-c)
+- [C y C++](#c-y-c)
 - [Clojure](#clojure)
 - [Elixir](#elixir)
 - [Go](#go)
@@ -46,7 +45,7 @@
 
 ## Temas
 
-Here's a list of commonly used Temas:
+Esta es una lista de temas muy usados:
 
 - [acme-colors](https://github.com/plan9-for-vimspace/acme-colors)
 - [apprentice](https://github.com/romainl/Apprentice)
@@ -68,16 +67,18 @@ Here's a list of commonly used Temas:
 - [yowish](https://github.com/kabbamine/yowish.vim)
 - [zenburn](https://github.com/jnurmine/Zenburn)
 
-Alternatively, generate your own colorscheme using [themer](https://github.com/mjswensen/themer)
-or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
+De forma alternativa puedes crear tu propio tema con [themer](https://github.com/mjswensen/themer)
+o [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
 ## Por Tema
 
-#### Alignment
+#### Identado
 
 - [tabular](https://github.com/godlygeek/tabular)
 - [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 - [vim-lion](https://github.com/tommcdo/vim-lion)
+- [indentLine](https://github.com/Yggdroot/indentLine)
+- [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
 
 #### Building y linting
 
@@ -121,11 +122,11 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 
 #### Fuzzy finders
 
-- [Command-T](https://github.com/wincent/Command-T) (_requires +ruby_)
+- [Command-T](https://github.com/wincent/Command-T) (_requiere +ruby_)
 - [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
-- [denite.nvim](https://github.com/Shougo/denite.nvim) (_requires +python3_)
+- [denite.nvim](https://github.com/Shougo/denite.nvim) (_requiere +python3_)
 - [fzf](https://github.com/junegunn/fzf) (y [fzf.vim](https://github.com/junegunn/fzf.vim))
-- [LeaderF](https://github.com/Yggdroot/LeaderF) (_requires +python or +python3_)
+- [LeaderF](https://github.com/Yggdroot/LeaderF) (_requiere +python o +python3_)
 - [unite.vim](https://github.com/Shougo/unite.vim)
 
 #### Grep tools
@@ -134,12 +135,7 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [ferret](https://github.com/wincent/ferret)
 - [vim-grepper](https://github.com/mhinz/vim-grepper)
 
-#### Indent
-
-- [indentLine](https://github.com/Yggdroot/indentLine)
-- [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)
-
-#### Navigation
+#### Navegacion
 
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [tagbar](https://github.com/majutsushi/tagbar)
@@ -147,11 +143,11 @@ or [Colortemplate](https://github.com/lifepillar/vim-colortemplate).
 - [vim-easymotion](https://github.com/easymotion/vim-easymotion)
 - [vim-sneak](https://github.com/justinmk/vim-sneak)
 - [vim-vinegar](https://github.com/tpope/vim-vinegar)
-- [vimfiler.vim](https://github.com/Shougo/vimfiler.vim) (_depends on other plugins_)
+- [vimfiler.vim](https://github.com/Shougo/vimfiler.vim) (_depende de otros plugins_)
 
-Also see [fuzzy finders](#fuzzy-finders).
+Tambien mira[fuzzy finders](#fuzzy-finders).
 
-#### Plugin managers
+#### Manejador de Plugins
 
 - [apt-vim](https://github.com/egalpin/apt-vim)
 - [dein.vim](https://github.com/Shougo/dein.vim)
@@ -163,9 +159,9 @@ Also see [fuzzy finders](#fuzzy-finders).
 
 #### Snippets
 
-- [neosnippet.vim](https://github.com/Shougo/neosnippet.vim) (_depends on other plugins_)
+- [neosnippet.vim](https://github.com/Shougo/neosnippet.vim) (_depende de otros plugins_)
 - [ultisnips](https://github.com/SirVer/ultisnips)
-- [vim-snipmate](https://github.com/garbas/vim-snipmate) (_depends on other plugins_)
+- [vim-snipmate](https://github.com/garbas/vim-snipmate) (_depende de otros plugins_)
 - [xptemplate](https://github.com/drmingdrmer/xptemplate)
 
 #### Statusline
