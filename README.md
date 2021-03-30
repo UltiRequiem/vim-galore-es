@@ -3,7 +3,7 @@
   <img src='https://user-images.githubusercontent.com/71897736/111492126-69d63200-870a-11eb-8d76-804ad43cbaba.png' alt='vim-galore logo' />
   <br /><br /><br /><br />
   <div>
-    <a href='    https://github.com/mhinz/vim-galore'>English</a> |
+    <a href='https://github.com/mhinz/vim-galore'>English</a> |
     <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
     <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
     <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
