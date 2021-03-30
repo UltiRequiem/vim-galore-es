@@ -143,42 +143,33 @@
 
 ## ¿Qué es Vim?
 
-[Vim](http://www.vim.org) is a text editor with a long line of ancestors that
-goes back to [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
-Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) released it in 1991.
+[Vim](http://www.vim.org) es un editor de texto con una larga linea de antecesores que viene desde [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
+Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) hizo el lanzamiento de la primera versión en 1991.
 
-The project is hosted online at [vim.org](http://www.vim.org/index.php).
+El proyecto esta hospeado en [vim.org](http://www.vim.org/index.php).
 
-Getting Vim: Use your favourite package manager or visit the [download
-page](http://www.vim.org/download.php) from vim.org.
+Obteniendo Vim: Usa tu manejador de paquetes favorito o visita la pagina de [descarga](http://www.vim.org/download.php).
 
-Discussions and user questions are best done on the
-[vim_use](https://groups.google.com/forum/#!forum/vim_use) mailing list or using
-IRC ([Freenode](https://freenode.net)) in the `#vim` channel.
+Discuciones o preguntas de usuario son bien respondidas en
+[vim_use](https://groups.google.com/forum/#!forum/vim_use) o usando
+IRC ([Freenode](https://freenode.net)) en el canal `#vim`.
 
-Development happens on [GitHub](https://github.com/vim/vim), discussions on the
-[vim_dev](https://groups.google.com/forum/#!forum/vim_dev) mailing list.
+El desarrollo sucede en [GitHub](https://github.com/vim/vim), y las discusiones en
+[vim_dev](https://groups.google.com/forum/#!forum/vim_dev).
 
-Read [Why, oh WHY, do those #?@! nutheads use
-vi?](http://www.viemu.com/a-why-vi-vim.html) to see common misconceptions about
-Vim explained.
+Lee [Why, oh WHY, do those #?@! nutheads use
+vi?](http://www.viemu.com/a-why-vi-vim.html) para 
+saber los basicos de vim.
 
 ## La filosofia de Vim
 
-Vim adheres to the modal editing philosophy. This means that it provides
-multiple modes and the meaning of keys changes according to the mode. You
-navigate files in _normal mode_, you insert text in _insert mode_, you select
-lines in _visual mode_, you access commands in _command-line mode_ and so on.
-This might sound complicated at first, but has a huge advantage: you don't have
-to break your fingers by holding several keys at once, most of the time you
-simply press them one after the other. The more common the task, the fewer keys
-are needed.
+Vim se adiere a la filosofia de editor modal. Esto significa que los atajos hacen cosas diferentes segun en el modo que estes. Tu te mueves entre archivos en _normal mode_, insertas texto en _insert mode_, seleccionas lineas en _visual mode_ y ejecutas comandos en _command-line mode_.
+Esto tal vez suena complicado al inicio, pero tiene un gran ventaja: No tendras que romper tu flujo de escritura solo para seleccionar texto o editar alguna parte.
 
-A related concept that works well with modal editing are operators and motions.
-_Operators_ start a certain action, e.g. changing, removing, or selecting text.
-Afterwards you specify the region of text you want to act on using a _motion_.
-To change everything between parentheses, use `ci(` (read _change inner
-parentheses_). To remove an entire paragraph of text, use `dap` (read _delete
+Un conecepto que funciona bien con la edición modal son operadores y mociones. 
+_Operadores_ comenzar cierta acción, e.g. cambiar, remover, o seleccionar texto.
+Después que especificas la región de texto con que vas a interctuar viene la _moción_.
+Para cambiar todo lo que este entre parentesis usa `ci(` (lee _change inner parentheses_). Para remover un parrafo entero , usa `dap` (read _delete
 around paragraph_).
 
 If you see advanced Vim users working, you'll notice that they speak the
