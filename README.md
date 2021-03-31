@@ -1616,14 +1616,14 @@ If you want it to persist, `:set undofile`. This will save the undo file for
     :h 'undofile'
     :h undo-persistence
 
-### Viminfo files
+### Archivos de Viminfo
 
-When backup, swap, and undo files are all about text state, viminfo files are
-used for saving everything else that would otherwise be lost when quitting Vim.
-The viminfo file keeps histories (command line, search, input), registers,
-marks, buffer list, global variables etc.
+Cuando los archivos de copia de seguridad, intercambio y deshacer tienen que ver con el estado del texto, los archivos viminfo son
+se utiliza para guardar todo lo demás que de otro modo se perdería al salir de Vim.
+El archivo viminfo guarda historiales (línea de comando, búsqueda, entrada), registros,
+marcas, lista de búfer, variables globales, etc.
 
-Por defecto, the viminfo is written to `~/.viminfo`.
+Por defecto, la información de vim se guarda en `~/.viminfo`.
 
     :h viminfo
     :h 'viminfo'
