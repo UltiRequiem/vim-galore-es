@@ -1655,9 +1655,9 @@ set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
 ## Editando archivos remotos
 
-Vim comes with the netrw plugin that enables editing remote files. Actually it
-transfers the remote file to a local temporary file via scp, opens a buffer
-using that file, and writes the changes back to the remote file on saving.
+Vim viene con el plugin netrw que habilita editar archivos remotos. Transfiere los archivos
+remotos a un archivo temporal local via scp, abre un buffer usando el archivo local, y guarda
+los cambios en el archivo remoto.
 
 Esto es muy util si tu quieres user tu configuración local opuesto a
 ssh'ing en un servidor y usar lo que el admind quiere que uses.
