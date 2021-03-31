@@ -2774,23 +2774,22 @@ it.
 
 Help: `:h function-search-undo`
 
-# Technical quirks
+# Peculiaridades técnicas
 
-## Newline used for NUL
+## Nuevas lineas usadas por NUL
 
-NUL characters (`\0`) in a file, are stored as newline (`\n`) in memory and
-displayed in a buffer as `^@`.
+Los caracteres NUL  (`\0`) en un archivo, son guardados como una nueva linea (`\n`) en memoria y
+mostrados en el buffer como `^@`.
 
-See `man 7 ascii` and `:h NL-used-for-Nul` for more information.
+Revisa `man 7 ascii` y `:h NL-used-for-Nul` para mas información.
 
-# Terminology
+# Terminologia
 
 ## Vim script? Vimscript? VimL?
 
-`Vim script`, `Vimscript`, and `VimL` all refer to the same thing: The
-programming language used for scripting Vim. Even though
-[8.0.360](https://github.com/vim/vim/commit/b544f3c81f1e6a50322855681ac266ffaa8e313c)
-changed all references to `VimL` to `Vim script`, which can now be considered
-the official term, `VimL` is still widespread all over the internet.
+`Vim script`, `Vimscript`, y `VimL` hacen referencia a la misma cosa: El lenguaje de programación para hacer scripts en vim
+. Aunque en la versión [8.0.360](https://github.com/vim/vim/commit/b544f3c81f1e6a50322855681ac266ffaa8e313c)
+cambiaron todas las referencias de `VimL` a `Vim script`, que ahora puede ser considerado el termino oficial
+, `VimL` sigue siendo usado por todo el internet.
 
-No matter which term you use, everyone will understand it.
+Por lo general no importa que termino uses, es probable que te entiendan igual.

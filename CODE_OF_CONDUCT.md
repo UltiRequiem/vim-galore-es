@@ -1,4 +1,3 @@
-
 # Código de Conducta convenido para Contribuyentes
 
 ## Nuestro compromiso
