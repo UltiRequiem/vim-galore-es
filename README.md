@@ -1628,45 +1628,45 @@ Por defecto, the viminfo is written to `~/.viminfo`.
     :h viminfo
     :h 'viminfo'
 
-### Example configuration for temporary files
+### Configuración de ejemplo para archivos temporales
 
-Put all temporary files in their own directory under `~/.vim/files`:
+Pon todos los archivos temporales en su propio directorio: `~/.vim/files`:
 
 ```vim
-" create directory if needed
+" crea el directorio si es necesario
 if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
   call mkdir($HOME.'/.vim/files')
 endif
 
-" backup files
+" archivos de backup
 set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
-" swap files
+" archivos swap 
 set directory   =$HOME/.vim/files/swap//
 set updatecount =100
-" undo files
+" archivos undo 
 set undofile
 set undodir     =$HOME/.vim/files/undo/
-" viminfo files
+" archivos de viminfo 
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 ```
 
-## Editing remote files
+## Editando archivos remotos
 
 Vim comes with the netrw plugin that enables editing remote files. Actually it
 transfers the remote file to a local temporary file via scp, opens a buffer
 using that file, and writes the changes back to the remote file on saving.
 
-This is extremely useful if you want to use your local configuration opposed to
-ssh'ing into a server and use whatever the admins want you to use.
+Esto es muy util si tu quieres user tu configuración local opuesto a
+ssh'ing en un servidor y usar lo que el admind quiere que uses.
 
 ```
 :e scp://bram@awesome.site.com/.vimrc
 ```
 
-If you have a `~/.ssh/config` set up already, this gets used automatically:
+Si tu tienes  `~/.ssh/config` ya habilitado, este se usa automáticamente:
 
 ```
 Host awesome
@@ -1675,21 +1675,21 @@ Host awesome
     User bram
 ```
 
-Assuming the above content in `~/.ssh/config`, this works just as well:
+Asumiendo que el contenido de arriba esta en `~/.ssh/config`, esto tambien funcionaria:
 
 ```
 :e scp://awesome/.vimrc
 ```
 
-Similar can be done with a `~/.netrc`, see `:h netrw-netrc`.
+Algo similar se puede hacer con `~/.netrc`, revisa `:h netrw-netrc`.
 
-Make sure to read `:h netrw-ssh-hack` and `:h g:netrw_ssh_cmd`.
+Asegurate de leer `:h netrw-ssh-hack` y `:h g:netrw_ssh_cmd`.
 
 ---
 
-Another possibility is using [sshfs](https://wiki.archlinux.org/index.php/Sshfs)
-which uses [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace) to
-mount a remote filesystem into your local filesystem.
+Otra posibildad es usar [sshfs](https://wiki.archlinux.org/index.php/Sshfs)
+el cual usa [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace) para
+montar un sistema de archivos remoto en tu sistema local de archivos.
 
 ## Manejando Plugins
 
