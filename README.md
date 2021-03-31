@@ -352,7 +352,7 @@ The [global buffer list](#buffers-windows-tabs) is a Vim thing. Before that, in
 vi, there only used to be the argument list, which is also available in Vim.
 
 Every filename given to Vim on the shell command-line, is remembered in the
-argument list. There can be multiple argument lists: by default all arguments
+argument list. There can be multiple argument lists: por defecto all arguments
 are put into the global argument list, but you can use `:arglocal` to create a
 new argument list that is local to the window.
 
@@ -451,7 +451,7 @@ Help:
 ## Mapleader
 
 The mapleader is simply a placeholder than can be used with custom mappings and
-is set to `\` by default.
+is set to `\` por defecto.
 
 ```vim
 nnoremap <leader>h :helpgrep<space>
@@ -541,7 +541,7 @@ full potential.
 - A range is either a single address or a pair of addresses separated by either
   `,` or `;`.
 - Ranges tell commands which lines to act on.
-- Most commands act only on the current line by default. Notable exceptions are
+- Most commands act only on the current line por defecto. Notable exceptions are
   `:write` and `:global` which act on all lines.
 
 The usage of ranges is pretty intuitive, so here are some examples (using `:d`
@@ -679,7 +679,7 @@ purposes, like completing struct members or class methods, and is often set by
 filetype plugins.
 
 Vim also allows for completing multiple kinds at once by setting the
-`'complete'` option. By default that option includes quite a lot, so be sure to
+`'complete'` option. por defecto that option includes quite a lot, so be sure to
 trim it to your taste. You can trigger this completion by using either `<c-n>`
 (next) and `<c-p>` (previous), which also happen to be the keys used for
 choosing entries in the popup menu. See `:h i^n` and `:h 'complete'` for more on
@@ -1348,7 +1348,7 @@ Help: `:h User`
 
 ### Nested autocmds
 
-By default, autocmds do not nest! If an autocmd executes a command, which in
+por defecto, autocmds do not nest! If an autocmd executes a command, which in
 turn would usually trigger another event, it won't happen.
 
 Let's say every time you start Vim, you want to automatically open your vimrc:
@@ -1623,7 +1623,7 @@ used for saving everything else that would otherwise be lost when quitting Vim.
 The viminfo file keeps histories (command line, search, input), registers,
 marks, buffer list, global variables etc.
 
-By default, the viminfo is written to `~/.viminfo`.
+Por defecto, the viminfo is written to `~/.viminfo`.
 
     :h viminfo
     :h 'viminfo'
@@ -1691,17 +1691,16 @@ Another possibility is using [sshfs](https://wiki.archlinux.org/index.php/Sshfs)
 which uses [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace) to
 mount a remote filesystem into your local filesystem.
 
-## Managing plugins
+## Manejando Plugins
 
-[Pathogen](https://github.com/tpope/vim-pathogen) was the first popular tool for
-managing plugins. Actually it just adjusts the _runtimepath_ (`:h 'rtp'`) to
-include all the things put under a certain directory. You have to clone the
-repositories of the plugins there yourself.
+[Pathogen](https://github.com/tpope/vim-pathogen) fue la primera herramienta para
+manjear plugins. Solo ajusta el _runtimepath_ (`:h 'rtp'`) para
+incluir todas las cosas en cierto directorio. Tu tienes que clonar los
+repositorios de los plugins por tu cuenta.
 
-Real plugin managers expose commands that help you to install and update plugins
-from within Vim.
+Los manejadores de Plugins reales tienen comandos que te ayudan a instalar plugins dentro de vim.
 
-[List of plugin managers](PLUGINS.md#plugin-managers)
+[Listsa de manejadores de Plugins](PLUGINS.md#plugin-managers)
 
 ## Block insert
 
@@ -1722,7 +1721,7 @@ If you have lines of different length and want to append the same text right
 after the end of each line, do this: `<c-v>3j$Atext<esc>`.
 
 Sometime you need to place the cursor somewhere after the end of the current
-line. You can't do that by default, but you can set the `virtualedit` option:
+line. You can't do that por defecto, but you can set the `virtualedit` option:
 
 ```vim
 set virtualedit=all
@@ -1811,7 +1810,7 @@ $ cscope -bqR
 This will create 3 files: `cscope{,.in,.po}.out` in the current working
 directory. Think of them as your database.
 
-Unfortunately `cscope` only analyzes `*.[c|h|y|l]` files by default. If you want
+Unfortunately `cscope` only analyzes `*.[c|h|y|l]` files por defecto. If you want
 to use cscope for a Java project instead, do this:
 
 ```sh
@@ -1876,7 +1875,7 @@ Help: `:h cscope`
 
 ## MatchIt
 
-Since Vim is written in C, a lot of features assume C-like syntax. By default,
+Since Vim is written in C, a lot of features assume C-like syntax. Por defecto,
 if your cursor is on `{` or `#endif`, you can use `%` to jump to the
 corresponding `}` or `#ifdef` respectively.
 
@@ -2005,7 +2004,7 @@ onoremap <expr> N  'nN'[v:searchforward]
 ## Saner command-line history
 
 If you're anything like me, you're used to going to next and previous items via
-`<c-n>` and `<c-p>` respectively. By default, this also works in the
+`<c-n>` and `<c-p>` respectively. Por defecto, this also works in the
 command-line and recalls older or more recent command-lines from history.
 
 So far, so good. But `<up>` and `<down>` are even smarter! They recall the
@@ -2739,7 +2738,7 @@ character.
 Putting it in a nutshell, Vim has a hard time distinguishing between a typed
 `<esc>` character and a proper escape sequence.
 
-By default, Vim uses `:set timeout timeoutlen=1000`, so it delays on ambiguity
+Por defecto, Vim uses `:set timeout timeoutlen=1000`, so it delays on ambiguity
 of mappings _and_ key codes by 1 second. This is a sane value for mappings, but
 you can define the key code timeout on its own which is the most common
 workaround for this entire issue:
