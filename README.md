@@ -159,7 +159,7 @@ El desarrollo sucede en [GitHub](https://github.com/vim/vim), y las discusiones 
 [vim_dev](https://groups.google.com/forum/#!forum/vim_dev).
 
 Lee [Why, oh WHY, do those #?@! nutheads use
-vi?](http://www.viemu.com/a-why-vi-vim.html) para 
+vi?](http://www.viemu.com/a-why-vi-vim.html) para
 saber los basicos de vim.
 
 ## La filosofia de Vim
@@ -167,7 +167,7 @@ saber los basicos de vim.
 Vim se adiere a la filosofia de editor modal. Esto significa que los atajos hacen cosas diferentes segun en el modo que estes. Tu te mueves entre archivos en _normal mode_, insertas texto en _insert mode_, seleccionas lineas en _visual mode_ y ejecutas comandos en _command-line mode_.
 Esto tal vez suena complicado al inicio, pero tiene un gran ventaja: No tendras que romper tu flujo de escritura solo para seleccionar texto o editar alguna parte.
 
-Un conecepto que funciona bien con la edición modal son operadores y mociones. 
+Un conecepto que funciona bien con la edición modal son operadores y mociones.
 _Operadores_ comenzar cierta acción, e.g. cambiar, remover, o seleccionar texto.
 Después que especificas la región de texto con que vas a interctuar viene la _moción_.
 Para cambiar todo lo que este entre parentesis usa `ci(` (lee _change inner parentheses_). Para remover un parrafo entero , usa `dap` (read _delete
@@ -1583,12 +1583,11 @@ $ diff -u /tmp/foo-backup /tmp/foo
     :h backup
     :h write-fail
 
-### Swap files
+### Archivos Swap
 
-When editing a file, unsaved changes get written to a swap file.
+Cuando editas un archivos, los cambios aun no guardados se escriben en un swap file.
 
-Get the name of the current swap file with `:swapname`. Disable them with `:set
-noswapfile`.
+Obten el nombre del archivo swap que estas editando con  `:swapname`. Desabitalo con `:set noswapfile`.
 
 A swap file gets updated either all 200 characters or when nothing was typed for
 4 seconds. They get deleted when you stop editing the file. You can change these
@@ -1599,24 +1598,22 @@ the file was written to disk, but the swap file won't be deleted. Now, if you
 edit the file again, Vim will offer the chance to recover the file from the swap
 file.
 
-When two people try to edit the same file, the second person will get a notice
-that the swap file already exists. It prevents people from trying to save
-different versions of a file. If you don't want that behaviour, see `:h
-'directory'`.
+Cuando dos personas tratan de editar el mismo archivo, la segunda persona obtendra
+un aviso que el _swap file_ ya existe. Esto previene que hayan dos versiones de un archivo. Si tu no quieres esto revisa `:h 'directory'`.
 
     :h swap-file
     :h usr_11
 
-### Undo files
+### Archivos Undo
 
-The [undo tree](#undo-tree) is kept in memory and will be lost when Vim quits.
-If you want it to persist, `:set undofile`. This will save the undo file for
-`~/foo.c` in `~/foo.c.un~`.
+El [undo tree](#undo-tree) es guardado en memoria y se pierde cuando cierras vim.
+Si tu quieres que se guarden, `:set undofile`. Esto hara que se guarde en
+`~/foo.c` o `~/foo.c.un~`.
 
     :h 'undofile'
     :h undo-persistence
 
-### Archivos de Viminfo
+### Los Archivos de Viminfo
 
 Cuando los archivos de copia de seguridad, intercambio y deshacer tienen que ver con el estado del texto, los archivos viminfo son
 se utiliza para guardar todo lo demás que de otro modo se perdería al salir de Vim.
@@ -1643,13 +1640,13 @@ set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
-" archivos swap 
+" archivos swap
 set directory   =$HOME/.vim/files/swap//
 set updatecount =100
-" archivos undo 
+" archivos undo
 set undofile
 set undodir     =$HOME/.vim/files/undo/
-" archivos de viminfo 
+" archivos de viminfo
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 ```
 
