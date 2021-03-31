@@ -1,7 +1,5 @@
 <div align='center'>
-  <br /><br /><br />
-  <img src='https://user-images.githubusercontent.com/71897736/111492126-69d63200-870a-11eb-8d76-804ad43cbaba.png' alt='vim-galore logo' />
-  <br /><br /><br /><br />
+  <img src='https://user-images.githubusercontent.com/71897736/113175780-674b0080-9211-11eb-866d-b6b9d4ecf8c6.png' alt='vim-galore logo'/>
   <div>
     <a href='https://github.com/mhinz/vim-galore'>English</a> |
     <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
@@ -10,133 +8,10 @@
     <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a> |
     <a href='https://github.com/kyoz/vim-galore-vi'>Vietnamese</a>
     <div>
-      <br />
       <sub>Licensiado bajo <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
     </div>
   </div>
-  <br /><br />
 </div>
-
-### [Intro](#intro-1)
-
-- [¿Qué es Vim?](#qué-es-vim)
-- [La filosofia de Vim](#la-filosofia-de-vim)
-- [Primeros Pasos](#primeros-pasos)
-- [Basico vimrc](#basico-vimrc)
-- [What kind of Vim am I running?](#what-kind-of-vim-am-i-running)
-- [Cheatsheets](#cheatsheets)
-
-### [Basicos](#basics-1)
-
-- [Buffers, windows, tabs](#buffers-windows-tabs)
-- [Active, loaded, listed, named buffers](#active-loaded-listed-named-buffers)
-- [Argument list](#argument-list)
-- [Mappings](#mappings)
-- [Mapleader](#mapleader)
-- [Registers](#registers)
-- [Ranges](#ranges)
-- [Marks](#marks)
-- [Completion](#completion)
-- [Motions, operators, text objects](#motions-operators-text-objects)
-- [Autocmds](#autocmds)
-- [Changelist, jumplist](#changelist-jumplist)
-- [Undo tree](#undo-tree)
-- [Quickfix and location lists](#quickfix-and-location-lists)
-- [Macros](#macros)
-- [Colorschemes](#colorschemes)
-- [Folding](#folding)
-- [Sessions](#sessions)
-- [Locality](#locality)
-
-### [Usage](#usage-1)
-
-- [Getting help offline](#getting-help-offline)
-- [Getting help offline (alternative)](#getting-help-offline-alternative)
-- [Getting help online](#getting-help-online)
-- [Autocmds in practice](#autocmds-in-practice)
-  - [User events](#user-events)
-  - [Nested autocmds](#nested-autocmds)
-- [Clipboard](#clipboard)
-  - [Clipboard usage (Windows, macOS)](#clipboard-usage-windows-macos)
-  - [Clipboard usage (Linux, BSD, ...)](#clipboard-usage-linux-bsd-)
-- [Restore cursor position when opening file](#restore-cursor-position-when-opening-file)
-- [Temporary files](#temporary-files)
-  - [Backup files](#backup-files)
-  - [Swap files](#swap-files)
-  - [Undo files](#undo-files)
-  - [Viminfo files](#viminfo-files)
-  - [Example configuration for temporary files](#example-configuration-for-temporary-files)
-- [Editing remote files](#editing-remote-files)
-- [Managing plugins](#managing-plugins)
-- [Block insert](#block-insert)
-- [Running external programs and using filters](#running-external-programs-and-using-filters)
-- [Cscope](#cscope)
-- [MatchIt](#matchit)
-- [True colors](#true-colors)
-
-### [Tips](#tips-1)
-
-- [Go to other end of selected text](#go-to-other-end-of-selected-text)
-- [Saner behavior of n and N](#saner-behavior-of-n-and-n)
-- [Saner command-line history](#saner-command-line-history)
-- [Saner CTRL-L](#saner-ctrl-l)
-- [Disable audible and visual bells](#disable-audible-and-visual-bells)
-- [Quickly move current line](#quickly-move-current-line)
-- [Quickly add empty lines](#quickly-add-empty-lines)
-- [Quickly edit your macros](#quickly-edit-your-macros)
-- [Quickly jump to header or source file](#quickly-jump-to-header-or-source-file)
-- [Quickly change font size in GUI](#quickly-change-font-size-in-gui)
-- [Change cursor style dependent on mode](#change-cursor-style-dependent-on-mode)
-- [Don't lose selection when shifting sidewards](#dont-lose-selection-when-shifting-sidewards)
-- [Reload a file on saving](#reload-a-file-on-saving)
-- [Smarter cursorline](#smarter-cursorline)
-- [Faster keyword completion](#faster-keyword-completion)
-- [Cosmetic changes to colorschemes](#cosmetic-changes-to-colorschemes)
-
-### [Commands](#commands-1)
-
-- [:global and :vglobal](#global-and-vglobal) - Execute a command on all matching lines.
-- [:normal and :execute](#normal-and-execute) - The scripting dream team.
-- [:redir and execute()](#redir-and-execute) - Capture command output.
-
-### [Debugging](#debugging-1)
-
-- [General tips](#general-tips)
-- [Verbosity](#verbosity)
-- [Profiling startup time](#profiling-startup-time)
-- [Profiling at runtime](#profiling-at-runtime)
-- [Debugging Vim scripts](#debugging-vim-scripts)
-- [Debugging syntax files](#debugging-syntax-files)
-
-### [Utilidades](#miscellaneous-1)
-
-- [Additional resources](#additional-resources)
-- [Vim distributions](#vim-distributions)
-- [Standard plugins](#standard-plugins)
-- [Map CapsLock to Control](#map-capslock-to-control)
-- [Generating HTML from buffer](#generating-html-from-buffer)
-- [Easter eggs](#easter-eggs)
-- [Why hjkl for navigation?](#why-hjkl-for-navigation)
-
-### [Problemas Comunes](#common-problems-1)
-
-- [Editing small files is slow](#editing-small-files-is-slow)
-- [Editing huge files is slow](#editing-huge-files-is-slow)
-- [Bracketed paste (or why do I have to set 'paste' all the time?)](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
-- [Delays when using escape key in terminal](#delays-when-using-escape-key-in-terminal)
-- [Function search undo](#function-search-undo)
-
-### [Technical quirks](#technical-quirks-1)
-
-- [Newline used for NUL](#newline-used-for-nul)
-
-### [Terminology](#terminology-1)
-
-- [Vim script? Vimscript? VimL?](#vim-script-vimscript-viml)
-
-### [List of colorschemes](PLUGINS.md#colorschemes-1)
-
-### [List of plugins](PLUGINS.md)
 
 <br>
 
