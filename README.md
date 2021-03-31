@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src='https://user-images.githubusercontent.com/71897736/113175780-674b0080-9211-11eb-866d-b6b9d4ecf8c6.png' alt='vim-galore logo'/>
+  <img src='https://user-images.githubusercontent.com/71897736/111492126-69d63200-870a-11eb-8d76-804ad43cbaba.png' alt='vim-galore logo'/>
   <div>
     <a href='https://github.com/mhinz/vim-galore'>English</a> |
     <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
