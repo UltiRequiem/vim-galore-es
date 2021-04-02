@@ -86,12 +86,10 @@ Next steps:
    problems, just look for it on the internet. Your problem was solved already.
    Vim comes with great documentation and knowing how to navigate it is a must:
    [Getting help offline](#getting-help-offline).
-5. Have a look at the [additional resources](#additional-resources).
+5. Echale un ojo a los [recursos adicionales](#additional-resources).
 
-One last advice: Please learn how to use Vim properly before starting to add all
-kinds of hyped [plugins](#managing-plugins) that only implement features that
-Vim already supports natively.
-
+Un ultimo aviso: Porfavor aprende como usar Vim de forma correcta
+antes de empezar a usar toda clases de [plugins](#managing-plugins).
 ## Basico vimrc
 
 The user vimrc can be put into `~/.vimrc` or for the sake of better separation
