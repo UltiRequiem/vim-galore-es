@@ -353,9 +353,10 @@ See `:h mapleader` and `:h maplocalleader` for more.
 Registers are slots that save text. Copying text into a register is called
 **yanking** and extracting text from a register is called **pasting**.
 
-Vim provides the following registers:
+Vim provee los siguientes registros:
 
-| Type                | Character              | Filled by? | Readonly? | Contains text from? |
+
+| Tipo               | Caracter              | Filled by? | Readonly? | Contains text from? |
 |---------------------|------------------------|------------|-----------|---------------------|
 | Unnamed             | `"`                    | vim        | [ ]       | Last yank or deletion. (`d`, `c`, `s`, `x`, `y`) |
 | Numbered            | `0` to `9`             | vim        | [ ]       | Register `0`: Last yank. Register `1`: Last deletion. Register `2`: Second last deletion. And so on. Think of registers `1`-`9` as a read-only [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) with 9 elements. |
