@@ -2589,7 +2589,7 @@ happen when there's ambiguity between mappings:
 Both mappings work as expected, but when typing `,a`, there will be a delay of 1
 second, because Vim waits whether the user keys in another `b` or not.
 
-Escape sequences pose the same problem:
+Las secuencias de escape plantean el mismo problema:
 
 - `<esc>` is used a lot for returning to normal mode or quitting an action.
 - Cursor keys are encoded using escape sequences.
@@ -2597,31 +2597,29 @@ Escape sequences pose the same problem:
   encoding with the high bit set, but many terminal emulators don't support it
   (or don't enable it by default) and send an escape sequence instead.
 
-You can test the above like this: `vim -u NONE -N` and type `i<c-v><left>` and
-you'll see a sequence inserted that starts with `^[` which denotes the escape
-character.
+Puede probar lo anterior de esta manera: `vim -u NONE -N` y escriba` i <c-v> <left> `y
+verá una secuencia insertada que comienza con `^ [` que denota el caracter de escape.
 
-Putting it in a nutshell, Vim has a hard time distinguishing between a typed
-`<esc>` character and a proper escape sequence.
+En pocas palabras, Vim tiene dificultades para distinguir entre una
+carácter `<esc>` y una secuencia de escape adecuada.
 
-Por defecto, Vim uses `:set timeout timeoutlen=1000`, so it delays on ambiguity
-of mappings _and_ key codes by 1 second. This is a sane value for mappings, but
-you can define the key code timeout on its own which is the most common
-workaround for this entire issue:
+Por defecto, Vim usa `:set timeout timeoutlen=1000`, por lo que retrasa la ambigüedad 
+de las asignaciones _y_ códigos clave en 1 segundo. Este es un valor sensato para las
+asignaciones, pero se puede definir el tiempo de espera del código clave por sí solo.
+La solución alternativa para todo este problema es:
 
 ```vim
-set timeout           " for mappings
-set timeoutlen=1000   " default value
-set ttimeout          " for key codes
-set ttimeoutlen=10    " unnoticeable small value
+set timeout           " para los mappings
+set timeoutlen=1000   " valores predeterminados
+set ttimeout          " para los códigos clave
+set ttimeoutlen=10    " valor pequeño imperceptible
 ```
 
-Under `:h ttimeout` you find a small table showing the relationship between
-these options.
+En `:h ttimeout` encuentras una pequeña tabla que muestra la relación entre
+estas opciones.
 
-If you're using tmux between Vim and your terminal emulator, also put this in
-your `~/.tmux.conf`:
-
+Si está utilizando tmux entre Vim y su emulador de terminal, también coloque esto en
+tu `~/.tmux.conf`:
 ```tmux
 set -sg escape-time 0
 ```
