@@ -91,27 +91,26 @@ Un ultimo aviso: Porfavor aprende como usar Vim de forma correcta
 antes de empezar a usar toda clases de [plugins](#managing-plugins).
 ## Basico vimrc
 
-The user vimrc can be put into `~/.vimrc` or for the sake of better separation
-into `~/.vim/vimrc`. The latter makes it easy to put the entire configuration
-under version control and upload it to, let's say GitHub.
+Puedes guardar tu configuración en `~/.vimrc` o en aras de una mejor separación
+en `~/.vim/vimrc`. Este último facilita la colocación de toda la configuración en un solo directorio,
+en el cual puede usar un manejador de versiones y subirlo a algun sito como __GitHub__.
 
-You find many "minimal vimrcs" all over the net, and maybe my version isn't as
-minimal as it should be, but it provides a good set of sane settings that I deem
-to be useful for starting out.
+Encontrarás muchos "vimrcs mínimos" en toda la red, y tal vez mi versión no sea tan
+mínimo como debería ser, pero proporciona un buen conjunto de ajustes cuerdos que considero
+útiles para empezar.
 
-Eventually you have to read up on all the mentioned settings anyway and decide
-for yourself. :-)
+Finalmente, tendrá que leer todas las configuraciones mencionadas de todos modos y decidir
+para ti. :-)
 
-So here it is: [minimal-vimrc](minimal-vimrc.vim)
+Asi que aqui esta: [minimal-vimrc](./minimal-vimrc.vim)
 
-In case you're interested, here's
-[my vimrc](https://github.com/mhinz/dotfiles/blob/master/.vim/vimrc).
+En caso de que te interese, aquí tienes
+[mi vimrc](https://github.com/mhinz/dotfiles/blob/master/.vim/vimrc).
 
-**TIP**: Most plugin authors maintain several plugins and also publish their
-vimrc on GitHub (often in a repository called "vim-config" or "dotfiles"), so
-whenever you find a plugin you like, look up its maintainer's GitHub page and
-look through the repositories.
-
+**SUGERENCIA**: la mayoría de los autores de plugins mantienen varios plugins y también publican sus
+vimrc en GitHub (a menudo en un repositorio llamado "vim-config" o "dotfiles"), entonces
+siempre que encuentre un complemento que le guste, busque el perfil de GitHub de su mantenedor y
+busque en los repositorios.
 ## What kind of Vim am I running?
 
 Looking at `:version` will give you all the information you need to know about
