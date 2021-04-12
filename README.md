@@ -58,26 +58,26 @@ actual task.
 
 ## Primeros pasos
 
-Vim comes bundled with an interactive tutorial that teaches the most basic
-things you need to know about. You can start it from the shell:
+Vim viene con un tutorial interactivo que enseña las cosas
+basicas que necesitas saber. Puede iniciarlo desde su terminal:
 
 ```
 $ vimtutor
 ```
+No se desanime por lo aburrido que parece y resuelva los ejercicios.
+Los editores o IDE que usaste antes eran probablemente todos no modales, por lo que 
+cambiar de modo parecerá incómodo al principio, pero cuanto más use Vim, más
+se guardara en su [memoria muscular](https://en.wikipedia.org/wiki/Muscle_memory).
 
-Don't be put off by how boring it looks like and work through the exercises. The
-editors or IDEs you used before were most probably all non-modal, so working by
-switching modes will seem awkward at first, but the more you use Vim, the more
-it becomes [muscle memory](https://en.wikipedia.org/wiki/Muscle_memory).
 
-Vim was bolted on [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor)), a
-[vi](https://en.wikipedia.org/wiki/Vi) clone, and supports two operating modes:
-"compatible" and "nocompatible". Using Vim in compatible mode means using vi
-defaults for all options, opposed to Vim defaults. As long as you didn't create
-a user vimrc yet or started Vim with `vim -N`, compatible mode is assumed! Don't
-use Vim in compatible mode. Just don't.
+Vim esta muy fuertemente ligado a [Stevie](https://en.wikipedia.org/wiki/Stevie_(text_editor)), 
+cual es un clon de [vi](https://en.wikipedia.org/wiki/Vi), y admite dos modos de funcionamiento:
+"compatible" y "nocompatible". Usar Vim en modo compatible significa usar los
+valores predeterminados de vi, muy diferentes a los por defecto de Vim. Hasta que no
+crees un vimrc o inicie Vim con `vim -N`, el modo compatible es asumido! ¡No
+use Vim en modo compatible!
 
-Next steps:
+Siguientes pasos:
 
 1. Create your own [vimrc](#minimal-vimrc).
 2. Have some [cheatsheets](#cheatsheets) ready for the first weeks.
