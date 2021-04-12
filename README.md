@@ -111,44 +111,42 @@ En caso de que te interese, aquí tienes
 vimrc en GitHub (a menudo en un repositorio llamado "vim-config" o "dotfiles"), entonces
 siempre que encuentre un complemento que le guste, busque el perfil de GitHub de su mantenedor y
 busque en los repositorios.
-## What kind of Vim am I running?
+## ¿Qué tipo de Vim estoy ejecutando?
 
-Looking at `:version` will give you all the information you need to know about
-how the currently running Vim binary was compiled.
+Ejecutar `:versión` le dará toda la información que necesita saber
+sobre cómo se compiló el binario de Vim que usted ejecuta actualmente.
 
-The first line tells you when the binary was compiled and the version, e.g. 7.4.
-One of the next lines states `Included patches: 1-1051`, which is the patch
-level. Thus, your exact Vim version is 7.4.1051.
+La primera línea le dice cuándo se compiló el binario y la versión. Ej. 7.4.
+Una de las siguientes líneas dice `Included patches: 1-1051`.
+Por lo tanto, en este ejemplo su versión exacta de Vim es 7.4.1051.
 
-Another line states something like `Tiny version without GUI` or `Huge version
-with GUI`. The obvious information from that is whether your Vim includes GUI
-support, e.g. for starting `gvim` from the shell or running `:gui` from Vim
-within a terminal emulator. The other important information is the `Tiny` and
-`Huge`. Vim distinguishes between feature sets called `tiny`, `small`, `normal`,
-`big`, and `huge`, all enabling different subsets of features.
+Otra línea dice algo como `Tiny version without GUI` o `Huge version with GUI`.
+La información obvia de eso es si su Vim incluye GUI o no, ej. para iniciar `gvim` desde el shell o ejecutar `: gui` desde Vim
+dentro de un emulador de terminal. La otra información importante es el "Tiny" y
+"Huge". Vim distingue entre conjuntos de características llamadas `tiny`, `small`, `normal`,
+`big`, and `huge`, todos habilitando diferentes subconjuntos de características.
 
-The majority of `:version` output is consumed by the feature list itself.
-`+clipboard` means the clipboard feature was compiled in, `-clipboard` means it
-wasn't compiled in.
+La mayor parte del output de  `:version` es consumida por la propia lista de características.
+`+clipboard` significa que la función del portapapeles se compiló, mientras que `-clipboard` significa que
+no se compiló.
 
-A few Vim features need to be compiled in for them to work. E.g. for `:prof` to
-work, you need a Vim with a huge feature set, because that set enables the
-`+profile` feature.
+Es necesario compilar algunas características de Vim para que funcionen. ej. para que `:prof`
+funcione, necesita un Vim con un gran conjunto de funciones, porque ese conjunto permite la
+Característica `+profile`.
 
-If that's not the case and you installed Vim from a package manager, make sure
-to install a package called `vim-x`, `vim-x11`, `vim-gtk`, `vim-gnome` or
-similar, since these packages usually come with the huge feature set.
+Si ese no es el caso e instaló Vim desde un administrador de paquetes, asegúrese de
+instalar un paquete llamado `vim-x`,` vim-x11`, `vim-gtk`,` vim-gnome` o
+similar, ya que estos paquetes generalmente vienen con un gran conjunto de funciones.
 
-You can also test for the version or features programmatically:
+También puede probar la versión o las características mediante programación:
 
 ```vim
-" Do something if running at least Vim 7.4.42 with +profile enabled.
+"Haga algo si ejecuta al menos Vim 7.4.42 con + perfil habilitado.
 if (v:version > 704 || v:version == 704 && has('patch42')) && has('profile')
-  " do stuff
+  " haga algo
 endif
 ```
-
-Help:
+Ayuda:
 
 ```
 :h :version
@@ -156,7 +154,6 @@ Help:
 :h +feature-list
 :h has-patch
 ```
-
 ## Cheatsheets
 
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
@@ -164,9 +161,9 @@ Help:
 - http://michael.peopleofhonoronly.com/vim/vim_cheat_sheet_for_programmers_screen.png
 - http://www.rosipov.com/images/posts/vim-movement-commands-cheatsheet.png
 
-Or quickly open a cheatsheet from within Vim: [vim-cheat40](https://github.com/lifepillar/vim-cheat40).
+O abre rápidamente una hoja de trucos desde Vim: [vim-cheat40](https://github.com/lifepillar/vim-cheat40).
 
-# Basics
+# Basicos
 
 ## Buffers, windows, tabs
 
