@@ -2626,18 +2626,18 @@ your `~/.tmux.conf`:
 set -sg escape-time 0
 ```
 
-## Function search undo
+## Función de buscar en undo
 
-- A search pattern in a command (`/`, `:substitute`, ...) changes the "last used
-  search pattern". (It's saved in the `/` register; print it with `:echo @/`).
-- A simple text change can be redone with `.`. (It's saved in the `.` register;
-  print it with `:echo @.`).
+- Un patrón de búsqueda en un comando (`/`, `: subdstitute`, ...) cambia el "último usado
+  patrón de búsqueda ". (Se guarda en el registro`/`; imprímalo con`:echo @/`).
+- Un simple cambio de texto se puede rehacer con `.`. (Se guarda en el registro del `.`;
+  puedes imprimirlo con `: echo @.`).
 
-Both things are _not_ the case, if you do them from a function, though! Thus you
-can't easily highlight words from a function or redo the text changes made by
-it.
+Sin embargo, ambas cosas _no_ son el caso, si las haces desde una función. Asi tu
+no puedes resaltar fácilmente palabras de una función o rehacer los cambios de 
+texto realizados poreso.
 
-Help: `:h function-search-undo`
+Ayuda: `:h function-search-undo`
 
 # Peculiaridades técnicas
 
