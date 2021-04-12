@@ -51,8 +51,8 @@ around paragraph_).
 Si ve usuarios avanzados de Vim trabajando, notará que hablan el
 _lenguaje de Vim_ así como los pianistas manejan sus instrumentos. Complejas
 operaciones se realizan con sólo pulsar unas pocas teclas. Ni siquiera lo piensan
-ya que su [memoria muscular] (https://en.wikipedia.org/wiki/Muscle_memory) ya sabe
-que hacer. Esto reduce la [carga mental] (https://en.wikipedia.org/wiki/Cognitive_load) 
+ya que su [memoria muscular](https://en.wikipedia.org/wiki/Muscle_memory) ya sabe
+que hacer. Esto reduce la [carga mental](https://en.wikipedia.org/wiki/Cognitive_load) 
 y ayuda a centrarse en la tarea principal.
 
 ## Primeros pasos
