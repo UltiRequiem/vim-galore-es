@@ -48,13 +48,12 @@ Después que especificas la región de texto con que vas a interctuar viene la _
 Para cambiar todo lo que este entre parentesis usa `ci(` (lee _change inner parentheses_). Para remover un parrafo entero , usa `dap` (read _delete
 around paragraph_).
 
-If you see advanced Vim users working, you'll notice that they speak the
-_language of Vim_ as well as pianists handle their instruments. Complex
-operations are done using only a few key presses. They don't even think about it
-anymore as [muscle memory](https://en.wikipedia.org/wiki/Muscle_memory) took
-over already. This reduces [cognitive
-load](https://en.wikipedia.org/wiki/Cognitive_load) and helps to focus on the
-actual task.
+Si ve usuarios avanzados de Vim trabajando, notará que hablan el
+_lenguaje de Vim_ así como los pianistas manejan sus instrumentos. Complejas
+operaciones se realizan con sólo pulsar unas pocas teclas. Ni siquiera lo piensan
+ya que su [memoria muscular] (https://en.wikipedia.org/wiki/Muscle_memory) ya sabe
+que hacer. Esto reduce la [carga mental] (https://en.wikipedia.org/wiki/Cognitive_load) 
+y ayuda a centrarse en la tarea principal.
 
 ## Primeros pasos
 
