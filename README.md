@@ -78,13 +78,13 @@ use Vim en modo compatible!
 
 Siguientes pasos:
 
-1. Create your own [vimrc](#minimal-vimrc).
-2. Have some [cheatsheets](#cheatsheets) ready for the first weeks.
-3. Read through the [basics](#basics-1) section to learn what is even possible.
-4. Learn on demand! You never finish learning Vim. If you encounter any
-   problems, just look for it on the internet. Your problem was solved already.
-   Vim comes with great documentation and knowing how to navigate it is a must:
-   [Getting help offline](#getting-help-offline).
+1. Crea tu propio [vimrc](#minimal-vimrc).
+2. Ten algunas [cheatsheets](#cheatsheets) listas para las primeras semanas.
+3. Lea la sección de [conceptos basicos](#basics-1) para saber qué es posible.
+4. ¡Aprenda bajo demanda! Nunca terminas de aprender Vim. Si encuentra algun
+    problemas, búsquelo en Internet. Tu problema seguro que ya fue resuelto.
+    Vim viene con una gran documentación y saber cómo navegar es imprescindible:
+   [Obteniendo ayuda offline](#getting-help-offline).
 5. Echale un ojo a los [recursos adicionales](#additional-resources).
 
 Un ultimo aviso: Porfavor aprende como usar Vim de forma correcta
