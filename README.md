@@ -165,34 +165,34 @@ O abre rápidamente una hoja de trucos desde Vim: [vim-cheat40](https://github.c
 
 # Basicos
 
-## Buffers, windows, tabs
+## Buffers, ventanas, tabs
 
-Vim is a text editor. Every time text is shown, the text is part of a
-**buffer**. Each file will be opened in its own buffer. Plugins show stuff in
-their own buffers etc.
+Vim es un editor de texto. Cada vez que el texto se muestra,el texto es parte de un
+**buffer**. Cada archivo sera abierto en su propio buffer. Los Plugins muestran sus cosas
+en sus propios buffers etc.
 
-Buffers have many attributes, e.g. whether the text it contains is modifiable,
-or whether it is associated with a file and thus needs to be synchronized to
-disk on saving.
+Los buffers tienen muchos atributos, ej.si el texto que contiene es modificable,
+o si está asociado con un archivo y, por lo tanto, debe sincronizarse con
+disco al guardar.
 
-**Windows** are viewports _onto_ buffers. If you want to view several files at
-the same time or even different locations of the same file, you use windows.
+**Windows** son ventanas graficos sobre los buffers.Si tu quieres ver mucho archivos
+al mismo tiempo o incluso en el mismo en diferentes locaciones del archivo, debes usar **Ventanas**.
 
-And please, please don't call them _splits_. You can split a window in two, but
-that doesn't make them _splits_.
+Y porfavor, no los llames __splits__. Tu puedes dividir una ventana en dos, pero
+eso no lo hace un __split__.
 
-Windows can be split vertically or horizontally and the heights and widths of
-existing windows can be altered, too. Therefore, you can use whatever window
-layout you prefer.
+Las ventanas se pueden dividir vertical u horizontalmente y las alturas y anchos de
+las ventanas existentes también se pueden modificar. Por lo tanto, puede usar cualquier ventana
+diseño que prefieras.
 
-A **tab page** (or just tab) is a collection of windows. Thus, if you want to
-use multiple window layouts, use tabs.
+Una **tab page** (o simplemente tab) es una colección de ventanas. Por lo tanto, si quieres
+use múltiples diseños de ventana, use pestañas.
 
-Putting it in a nutshell, if you start Vim without arguments, you'll have one
-tab page that holds one window that shows one buffer.
+En pocas palabras, si inicia Vim sin argumentos, tendrá una
+pestaña que contiene una ventana que muestra un búfer.
 
-By the way, the buffer list is global and you can access any buffer from any
-tab.
+Por cierto, la lista de búfer es global y puede acceder a cualquier búfer desde cualquier
+pestaña.
 
 ## Active, loaded, listed, named buffers
 
