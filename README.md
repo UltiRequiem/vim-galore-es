@@ -201,48 +201,48 @@ Tienes un **búfer cargado** ahora. El contenido del búfer solo se sincroniza
 al disco (escrito de nuevo en el archivo) si guardas dentro de Vim.
 
 Dado que el búfer también se muestra en una ventana, también es un **búfer activo**. Ahora
-si carga otro archivo a través de `: e file2`,` file1` se convertirá en un **búfer oculto**
+si carga otro archivo a través de `:e file2`,` file1` se convertirá en un **búfer oculto**
 y `file2` el **bufér activo**.
 
 Ambos búferes también se **enumeran**, por lo que se enumerarán en la salida de
-`: ls`. Los búferes de complementos o los búferes de ayuda a menudo se marcan como no listados, ya que
+`:ls`. Los búferes de complementos o los búferes de ayuda a menudo se marcan como no listados, ya que
 no son archivos normales que se sulen editar con un editor de texto.  
 
 Los **Búferes sin nombre**, que también suelen utilizar los complementos, son búferes que no tienen un
-nombre de archivo asociado. ej. `: enew` creará un búfer temporal sin nombre. Agregar
-algo de texto y escribirlo en el disco a través de `: w /tmp/foo`, y se convertirá en un nombre
+nombre de archivo asociado. ej. `:enew` creará un búfer temporal sin nombre. Agregar
+algo de texto y escribirlo en el disco a través de `:w/tmp/foo`, y se convertirá en un nombre
 buffer.
 
 ## Argument list
 
-The [global buffer list](#buffers-windows-tabs) is a Vim thing. Before that, in
-vi, there only used to be the argument list, which is also available in Vim.
+La [lista global de buffers](#buffers-windows-tabs) es una cosa de Vim. Antes, en
+vi, solo eran argumentos, que tambien estan dispoibles en Vim.
 
-Every filename given to Vim on the shell command-line, is remembered in the
-argument list. There can be multiple argument lists: por defecto all arguments
-are put into the global argument list, but you can use `:arglocal` to create a
-new argument list that is local to the window.
+Cada nombre de archivo dado a Vim en la línea de comandos del shell, se recuerda en el
+lista de argumentos. Puede haber varias listas de argumentos: por defecto todos los argumentos
+se colocan en la lista de argumentos global, pero puede usar `:arglocal` para crear un
+nueva lista de argumentos que es local a la ventana.
 
-List the current arguments with `:args`. Switch between files from the argument
-list with `:next`, `:previous`, `:first`, `:last` and friends. Alter it with
-`:argadd`, `:argdelete` or `:args` with a list of files.
+Enumere los argumentos actuales con `:args`. Cambiar entre archivos del argumento
+lista con `:next`,`:previous`, `:first`,`:last` y similares. Alterna con
+`:argadd`,`:argdelete` o `:args` en una lista de archivos.
 
-If you should prefer using the buffer or argument list for working with files is
-a matter of taste. My impression is that most people use the buffer list
-exclusively.
+Si prefiere usar el búfer o la lista de argumentos para trabajar con archivos es
+una cuestión de gusto. Mi impresión es que la mayoría de la gente usa la lista de búfer
+exclusivamente.
 
-Nevertheless, there is one huge use case for the argument list: batch processing
-via `:argdo`! A simple refactoring example:
+Sin embargo, hay un gran caso de uso para la lista de argumentos: procesamiento por lotes
+a través de `:argdo`! Un ejemplo simple de refactorización:
 
 ```vim
 :args **/*.[ch]
 :argdo %s/foo/bar/ge | update
 ```
 
-This replaces all occurrences of "foo" by "bar" in all C source and header files
-from the current directory and below.
+Esto reemplaza todas las apariciones de "foo" por "bar" en todos los archivos fuente y de encabezado de C
+desde el directorio actual y todos los que se encuentren dentro.
 
-Help: `:h argument-list`
+Ayuda: `:h argument-list`
 
 ## Mappings
 
@@ -251,7 +251,7 @@ command of that family defines a mapping for a certain set of modes. Technically
 Vim comes with a whopping 12 modes, 6 of them can be mapped. Additionally, some
 commands act on multiple modes at once.
 
-| Recursive | Non-recursive | Unmap     | Modes                            |
+| Recursivo | No Recursivo | Unmap     | Modos                            |
 |-----------|---------------|-----------|----------------------------------|
 | `:map`    | `:noremap`    | `:unmap`  | normal, visual, operator-pending |
 | `:nmap`   | `:nnoremap`   | `:nunmap` | normal                           |
