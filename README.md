@@ -113,7 +113,7 @@ siempre que encuentre un complemento que le guste, busque el perfil de GitHub de
 busque en los repositorios.
 ## ¿Qué tipo de Vim estoy ejecutando?
 
-Ejecutar `:versión` le dará toda la información que necesita saber
+Ejecutar `:version` le dará toda la información que necesita saber
 sobre cómo se compiló el binario de Vim que usted ejecuta actualmente.
 
 La primera línea le dice cuándo se compiló el binario y la versión. Ej. 7.4.
@@ -196,22 +196,21 @@ pestaña.
 
 ## Active, loaded, listed, named buffers
 
-Run Vim like this `vim file1`. The file's content will be loaded into a buffer.
-You have a **loaded buffer** now. The content of the buffer is only synchronized
-to disk (written back to the file) if you save it within Vim.
+Vim ejecuta esto como`vim file1`. El contenido del archivo se cargará en un búfer.
+Tienes un **búfer cargado** ahora. El contenido del búfer solo se sincroniza
+al disco (escrito de nuevo en el archivo) si guardas dentro de Vim.
 
-Since the buffer is also shown in a window, it's also an **active buffer**. Now
-if you load another file via `:e file2`, `file1` will become a **hidden buffer**
-and `file2` the active one.
+Dado que el búfer también se muestra en una ventana, también es un **búfer activo**. Ahora
+si carga otro archivo a través de `: e file2`,` file1` se convertirá en un **búfer oculto**
+y `file2` el **bufér activo**.
 
-Both buffers are also **listed**, thus they will get listed in the output of
-`:ls`. Plugin buffers or help buffers are often marked as unlisted, since
-they're not regular files you usually edit with a text editor. Listed and
-unlisted buffers can be shown via `:ls!`.
+Ambos búferes también se **enumeran**, por lo que se enumerarán en la salida de
+`: ls`. Los búferes de complementos o los búferes de ayuda a menudo se marcan como no listados, ya que
+no son archivos normales que se sulen editar con un editor de texto.  
 
-**Unnamed buffers**, also often used by plugins, are buffers that don't have an
-associated filename. E.g. `:enew` will create an unnamed scratch buffer. Add
-some text and write it to disk via `:w /tmp/foo`, and it will become a named
+Los **Búferes sin nombre**, que también suelen utilizar los complementos, son búferes que no tienen un
+nombre de archivo asociado. ej. `: enew` creará un búfer temporal sin nombre. Agregar
+algo de texto y escribirlo en el disco a través de `: w /tmp/foo`, y se convertirá en un nombre
 buffer.
 
 ## Argument list
@@ -2586,8 +2585,8 @@ happen when there's ambiguity between mappings:
 :nnoremap ,ab :echo 'bar'<cr>
 ```
 
-Both mappings work as expected, but when typing `,a`, there will be a delay of 1
-second, because Vim waits whether the user keys in another `b` or not.
+Las 2 combinaciones funcionan como se espera, pero cuando presionamos `,a`, abra un retraso de 1
+segundo, porque Vim espera a confirmar que el usuario teclee otra `b` o no.
 
 Las secuencias de escape plantean el mismo problema:
 
