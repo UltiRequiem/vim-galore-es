@@ -246,10 +246,10 @@ Ayuda: `:h argument-list`
 
 ## Mappings
 
-You can define your own mappings with the `:map` family of commands. Each
-command of that family defines a mapping for a certain set of modes. Technically
-Vim comes with a whopping 12 modes, 6 of them can be mapped. Additionally, some
-commands act on multiple modes at once.
+Puede definir sus propias asignaciones con la familia de comandos `:map`. Cada
+El comando de esa familia define un mapeo para un cierto conjunto de modos. Técnicamente
+Vim viene con 12 modos, 6 de ellos se pueden mapear. Además, algunos
+los comandos actúan en múltiples modos a la vez.
 
 | Recursivo | No Recursivo | Unmap     | Modos                            |
 |-----------|---------------|-----------|----------------------------------|
@@ -260,57 +260,52 @@ commands act on multiple modes at once.
 | `:omap`   | `:onoremap`   | `:ounmap` | operator-pending                 |
 | `:imap`   | `:inoremap`   | `:iunmap` | insert                           |
 
-E.g. this defines the mapping for normal mode only:
+Ej. Esto define el mapeo solo para el modo normal:
 
 ```vim
 :nmap <space> :echo "foo"<cr>
 ```
 
-Unmap it again by using `:nunmap <space>`.
+Desmapearlo nuevamente usando `:nunmap <space>`.
 
-For a few more but rather uncommon modes (or combinations of them), see `:h
-map-modes`.
+Para ver algunos modos más, consulte `: h map-modes`.
 
-So far, so good. There's only one problem that can be pretty confusing to
-beginners: `:nmap` is _recursive_! That is, the right-hand side takes other
-mappings into account.
+Hasta aquí todo bien. Solo hay un problema que puede resultar bastante confuso para los principiantes:`:nmap` es recursivo! 
+Es decir, el lado derecho tiene en cuenta otras asignaciones.
 
-So you defined a mapping that simply echoes "Foo":
+Así que definiste un mapeo que simplemente hace echo de "Foo":
 
 ```vim
 :nmap b :echo "Foo"<cr>
 ```
 
-But what if you want to map the default behavior of `b` (going one word back) to
-another key?
+Pero, ¿qué sucede si desea asignar el comportamiento predeterminado de `b` (retrocediendo una palabra) a otra clave?
 
 ```vim
 :nmap a b
 ```
 
-If you hit <kbd>a</kbd>, we expect the cursor to go back a word, but instead
-"Foo" is printed in the command-line! Because the right-hand side, `b`, was
-mapped to another action already, namely `:echo "Foo"<cr>`.
+Si presiona <kbd>a</kbd>, esperamos que el cursor retroceda una palabra, pero en su lugar
+"Foo" está impreso en la línea de comandos. Debido a que el lado derecho, `b`, era
+mapeado a otra acción, a saber `:echo "Foo"<cr>`.
 
-The proper way to resolve this problem is to use a _non-recursive_ mapping
-instead:
+La forma correcta de resolver este problema es utilizar un mapeo _no recursivo_
+en lugar de:
 
 ```vim
 :nnoremap a b
 ```
 
-Rule of thumb: Always use non-recursive mappings unless recursing is actually
-desired.
+Regla de oro: utilice siempre mapeos no recursivos a menos que realmente desee el recursivo.
 
-Look up your mappings by not giving a right-hand side. E.g. `:nmap` shows all
-normal mappings and `:nmap <leader>` shows all normal mappings that start with
-the mapleader.
+Busque sus asignaciones sin dar un lado derecho. ej. `:nmap` muestra todo
+asignaciones normales y `:nmap <leader>` muestra todas las asignaciones normales que comienzan con
+el mapleader.
 
-If you want to disable a standard mapping, map them to the special `<nop>`
-character, e.g. `:noremap <left> <nop>`.
+Si desea deshabilitar un mapeo estándar, asígnele `<nop>`
+al caracter, ej. `:noremap <left> <nop>`.
 
-Help:
-
+Ayuda:
     :h key-notation
     :h mapping
     :h 05.3
